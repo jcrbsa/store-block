@@ -4,8 +4,12 @@ interface CountdownProps {
   targetDate: string
 }
 
-const Countdown: StorefrontFunctionComponent<CountdownProps> = ({ }) => {
-  return <div> <h1>{targetDate}</h1></div>
+const Countdown: StorefrontFunctionComponent<CountdownProps> = ({ targetDate }) => {
+  return (
+    <div>
+      <h1>{ targetDate }</h1>
+    </div>
+  ) 
 }
 
 Countdown.schema = {
@@ -13,13 +17,12 @@ Countdown.schema = {
   description: 'editor.countdown.description',
   type: 'object',
   properties: {
-    targetDate: {
+   targetDate: {
       title: 'Data final',
       description: 'Data final utilizada no contador',
       type: 'string',
       default: null,
-    },
-
+   },
   },
 }
 

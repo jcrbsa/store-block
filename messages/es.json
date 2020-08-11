@@ -1,4 +1,6 @@
 {
+  "countdown.title": "Cuenta Regresiva",
   "editor.countdown.title": "Cuenta regresiva",
   "editor.countdown.description": "Cuenta regresiva component"
+  
 }
